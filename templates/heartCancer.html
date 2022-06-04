@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon_package_v0.16/site.webmanifest">
+    <link rel="icon" href="/static/favicon_package_v0.16/favicon-32x32.png" type="image/x-icon">
+    <title>Diagnose That</title>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&family=Source+Serif+4&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'image'
+            'box-1'
+            'box-2'
+            'box-3'
+            'head'
+            'ques';
+            font-family: 'Brygada 1918', 'serif';
+        }
+        .box-1{
+            grid-area: box-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .box-2{
+            grid-area: box-2;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .inbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            margin: 20px 25px;
+            text-align: center;
+            transition: all 0.9s ease-in-out 0.5;
+        } 
+        .image{
+            grid-area: image;
+            image-resolution: 4px;
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+        .inbox:hover{
+            transform: scale(1.1);
+        }
+        .testImage{
+            display: flex;
+            justify-content: center;
+        }
+        .box-3{
+            grid-area: box-3;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .heading{
+           grid-area: head; 
+           display: flex;
+           justify-content: center;
+        }
+        .questionnaire{
+            grid-area: ques;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .question{
+            font-size: large;
+            background-color: rgba(134, 243, 208, 0.671);
+            margin-top: 20px;
+            border-radius: 10px;
+            padding-left: 15px;
+            transition: all 0.9s ease-in-out 0.5;
+            box-shadow: #10c3f0;
+            border: 2px solid rgb(247, 246, 246);
+            padding-bottom: 10px;
+        }
+        .question:hover{
+            border: 2px solid rgb(245, 126, 245);
+        }
+        input[type=radio]:checked ~ .radio_demo {
+            border: 3px solid #10c3f0;
+            color: #10c3f0;
+        }
+        input[type=radio]:checked ~ .radio_demo::before{
+            border: 3px solid #10c3f0;
+            color: #10c3f0;
+        }
+        input[type=submit]{
+            width: 25vw;
+            margin-top: 20px;
+            height: 5vh;
+            margin-left: 35vw;
+            background-color: rgba(134, 243, 208, 0.671);
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid rgb(245, 126, 245);
+            transition: all 0.9 ease-in-out 0.5s;
+        }
+        input[type=submit]:hover{
+            transform: scale(1.2);
+            border-radius: 5px;
+            padding: 5px;
+            border: 3px solid rgb(245, 126, 245);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image">
+            <img src="/static/logopic.png" alt="loading">
+        </div>
+
+        <div class="box-1">
+
+            <h2>About Heart disease</h2>
+
+            <p>Heart Disease is a condition that develops when a substance called plaque builds up in the walls of the arteries. This buildup narrows the arteries, making it harder for blood to flow through. If a blood clot forms, it can block the blood flow. This can cause a heart attack or stroke.</p>
+        </div>
+        <div class="box-2">
+
+            <div class="inbox">
+
+                <div class="testImage">
+                    <img src="/static/heart stage1.png" alt="loading">
+                </div>
+                <h3>Stage-1</h3>
+                <p>Small infection, minimally invasive and has not spread at all in one heart.</p>
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img src="/static/heart stage2.png" alt="loading">
+
+                </div>
+                <h3>Stage-2</h3>
+                <p>infection grows larger, starts to spread slightly in one part of the heart.</p>
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img src="/static/heart stage3.png" alt="loading">
+
+                </div>
+                <h3>Stage-3</h3>
+                <p>Infection starts to spread from the lungs to the lymph nodes and to nearby organs, like the esophagus and trachea.</p>
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img src="/static/heart stage4.png" alt="loading">
+
+                </div>
+                <h3>Stage-4</h3>
+                <p>Infection has spread widely through the heart and body and may affect outside organs.</p>
+                
+            </div>
+        </div>
+        <div class="box-3">
+            <img src="/static/heart_cancer_main.jpg" alt="loading">
+        </div>
+        <div class="heading">
+
+            <h2>Heart Disease Prediction</h2>
+
+        </div>
+        <form action="/predictdisease" method="POST">
+
+            <div class="questionnaire">
+    
+                <div class="question">
+    
+                    <p>What is your age? </p>
+    
+                    <div class="check-box">
+                   <input type = "text"  name="age">
+                    </div>
+                </div>
+            </div>
+            <!--  gender  -->
+                <div class="question">
+                    <p>What is your gender?</p>  
+    
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="gender" id="gender" value="1"> 
+                         <label for="exampleRadios">
+                            Male
+                        </label>
+     
+                        <input class="radio_demo" type="radio" name="gender" id="gender" value="0"> 
+                        <label for="exampleRadios">
+                            Female 
+                        </label>
+     
+                     </div>
+                </div>
+
+                <!-- chesting pain type   -->
+                <div class="question"> 
+                    <p>     What type of pain you experience in chest?</p>
+    
+                    <div class="check-box">
+                        <div class="check-box">
+    
+                            <input class="radio_demo" type="radio" name="chest_pain" id="chest_pain" value="0"> 
+                             <label for="exampleRadios" name = "chest_pain">
+                                ASY (Asymptomatic)
+                            </label>
+                            <input class="radio_demo" type="radio" name="chest_pain" id="chest_pain" value="1"> 
+                            <label for="exampleRadios" name ="chest_pain">
+                                ATA (Atypical angina pain)
+                            </label>
+                            
+                            <input class="radio_demo" type="radio" name="chest_pain" id="chest_pain" value="2"> 
+                             <label for="exampleRadios" name = "chest_pain">
+                                NAP (Non anginal pain )
+                            </label>
+                         </div>
+
+                    </div>
+                    </div>
+
+                    <!-- resting bp  -->
+                <div class="question">  
+                    <p>What is your blood pressure when you are in a normal resting condition?</p>
+    
+                    <div class="check-box">
+    
+                        <input  type="text"  id="bp" name="resting_bp"> 
+                        <label for="exampleRadios">
+                            
+                        </label>
+                     </div>
+                </div>
+
+                <!-- cholestrol  -->
+                <div class="question"> 
+                    <p>What is your total cholestrol level?</p>
+    
+                    <div class="check-box">
+    
+                        <input type = "text" name="cholestrol">
+                     </div>
+                </div>
+
+                <!-- fasting bs -->
+                <div class="question">  
+                    <p>What is your fasting blood sugar?</p>
+                     <input type = "text" name="fasting_bs">
+                </div>
+                
+                <!--  resting ecg  -->
+                <div class="question"> 
+                    <p>What is your resting ECG?</p>
+    
+                    <input type = "text" name="resting_ecg">
+                     </div>
+    
+                </div>
+
+               <!-- maxHR -->
+                <div class="question"> 
+                    <p>What was your maximum heart rate during the day?</p>
+    
+                    <input type = "text" name ="maxHR">
+                     </div>
+    
+                </div>
+
+                <!-- excercise angina  -->
+                <div class="question"> 
+                    <p>Did you experience any sort of pain or uncomfortability/ pressure experienced in your heart while doing excercise ?</p>
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="exercise" id="exercise" value="1"> 
+                         <label for="exampleRadios" name = "excercise">
+                            Yes
+                        </label>
+                        <input class="radio_demo" type="radio" name="exercise" id="excercise" value="0"> 
+                        <label for="exampleRadios" name ="excercise">
+                            No
+                        </label>
+                     </div>
+                </div>
+
+                <!-- old_peaks -->
+                <div class="question"> 
+                    <p>How many times you excercise as compared to rest in a day?</p>
+    
+                    <div class="check-box">
+                        <input type = "number" name = "old_peak">
+     
+                     </div>
+    
+                </div>
+
+                <!-- st _slope -->
+                <div class="question">
+                    <p>How much increment you get on your heart rate when you do excercise?</p>
+    
+                    <div class="check-box">
+                        <input type = "number" name = "st_slope">
+                    </div>
+                    </div>
+                
+                <input type="submit" value="Predict">
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>

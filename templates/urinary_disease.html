@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon_package_v0.16/site.webmanifest">
+    <link rel="icon" href="/static/favicon_package_v0.16/favicon-32x32.png" type="image/x-icon">
+    <title>Diagnose That</title>
+    <script>
+        function validation(){
+
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&family=Source+Serif+4&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'image'
+            'box-1'
+            'box-2'
+            'box-3'
+            'head'
+            'ques';
+            font-family: 'Brygada 1918', 'serif';
+        }
+        .box-1{
+            grid-area: box-1; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        }
+        .box-2{
+             
+            grid-area: box-2;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .inbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 25%;
+            margin: 20px 25px;
+            text-align: center;
+            transition: all 0.9s ease-in-out 0.5;
+        } 
+        .image{
+            grid-area: image;
+            image-resolution: 4px;
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+        .inbox:hover{
+            transform: scale(1.1);
+        }
+        .testImage{
+            display: flex;
+            justify-content: center;
+        }
+        .box-3{
+            grid-area: box-3;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .heading{
+           grid-area: head; 
+           display: flex;
+           justify-content: center;
+        }
+        .questionnaire{
+            grid-area: ques;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            /* border: 2px solid black; */
+            /* width: 100vw; */
+        }
+        .question{
+            font-size: large;
+            /* background-color: linear_gradient(rgba(134, 243, 208, 0.671),rgba(134, 243, 208, 0.671)); */
+            background-color: rgba(134, 243, 208, 0.671);
+            margin-top: 20px;
+            border-radius: 10px;
+            padding-left: 15px;
+            transition: all 0.9s ease-in-out 0.5;
+            box-shadow: #10c3f0;
+            border: 2px solid rgb(247, 246, 246);
+            padding-bottom: 10px;
+        }
+        .question:hover{
+            border: 2px solid rgb(245, 126, 245);
+        }
+        input[type=radio]:checked ~ .radio_demo {
+            border: 3px solid #10c3f0;
+            color: #10c3f0;
+        }
+        input[type=radio]:checked ~ .radio_demo::before{
+            border: 3px solid #10c3f0;
+            color: #10c3f0;
+        }
+        input[type=submit]{
+            width: 25vw;
+            margin-top: 20px;
+            height: 5vh;
+            margin-left: 35vw;
+            background-color: rgba(134, 243, 208, 0.671);
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid rgb(245, 126, 245);
+            transition: all 0.9 ease-in-out 0.5s;
+        }
+        input[type=submit]:hover{
+            transform: scale(1.2);
+            /* background-color: rgba(83, 195, 199, 0.671); */
+            border-radius: 5px;
+            padding: 5px;
+            border: 3px solid rgb(245, 126, 245);
+            cursor: pointer;
+        }
+        .images{
+            background-size: 100% 100%;
+            /* background-position: center; */
+            /* background-size:cover; */
+            border-radius: 50%;
+            
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="image">
+            <img src="/static/logopic.png" alt="loading">
+        </div>
+
+        <div class="box-1">
+
+            <h2>About Urinary Inflammation</h2>
+
+            <p>Acute inflammation of urinary bladder is characterised
+                by sudden occurrence of pains in the abdomen region and the urination in form of
+                constant urine pushing, micturition pains and sometimes lack of urine keeping.
+                Temperature of the body is rising, however most often not above 38C. The excreted
+                urine is turbid and sometimes bloody. At proper treatment, symptoms decay usually
+                within several days. However, there is inclination to returns. At persons with acute
+                inflammation of urinary bladder, we should expect that the illness will turn into
+                protracted form.</p>
+
+        </div>
+        
+        <div class="box-2">
+
+            <div class="inbox"> 
+
+                <div class="testImage">
+                    <img  class = "images" src="/static/nausea.jpg" alt="loading">
+                </div>
+                <h3>Nausea</h3>
+      
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img  class = "images" src="/static/abdominal pain.jpg" alt="loading">
+                    
+                </div>
+                <h3>Abdominal Pain</h3>
+           
+
+            </div>
+
+            <div class="inbox">
+
+                <div class="testImage">
+
+                    <img class ="images" src="/static/fever.jpg" alt="loading">
+                    
+                </div>
+                <h3>Fever</h3>
+            
+            </div>
+
+            <!-- <div class="inbox">
+
+                <div class="testImage">
+                    <img  class = "images" src="/static/burning_sensation.jpg" alt="loading">
+                </div>
+               
+            </div> -->
+        </div>
+        <div class="box-3">
+            <img src="/static/urinary_tract_infection.jpg" alt="loading">
+        </div>
+        <div class="heading">
+
+            <h2>Urinary Inflammation Prediction</h2>
+
+        </div>
+        <form action="/predicturinary" method="POST">
+
+            <div class="questionnaire">
+    
+                <div class="question">
+    
+                    <p>What has been your temperature lately (in degree)?</p> 
+                    <input type = "text" name="temperature">
+         
+                </div>
+                <div class="question">
+                    <p> Are you experiencing nausea?</p>
+    
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="nausea" id="fingers_yes" value="1"> 
+                         <label for="exampleRadios">
+                            Yes
+                        </label>
+     
+                        <input class="radio_demo" type="radio" name="nausea" id="fingers_no" value="0"> 
+                        <label for="exampleRadios">
+                            No
+                        </label>
+     
+                     </div>
+                </div>
+                <div class="question">
+                    <p>Are you experiencing back pain?</p>
+    
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="pain" id="anxious_yes" value="1"> 
+                         <label for="exampleRadios">
+                            Yes
+                        </label>
+     
+                        <input class="radio_demo" type="radio" name="pain" id="anxious_no" value="0"> 
+                        <label for="exampleRadios">
+                            No
+                        </label>
+     
+                     </div>
+                </div>
+                <div class="question">
+                    <p>Do you feel like to urinate often in a day?</p>
+    
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="urinate" id="pressure_yes" value="1"> 
+                         <label for="exampleRadios">
+                            Yes
+                        </label>
+     
+                        <input class="radio_demo" type="radio" name="urinate" id="pressure_no" value="0"> 
+                        <label for="exampleRadios">
+                            No
+                        </label>
+     
+                     </div>
+                </div>
+                <div class="question">
+                    <p>Are you experiencing pain in lower abdomen while urinating?</p>
+    
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="abdomen" id="chronic_yes" value="1"> 
+                         <label for="exampleRadios">
+                            Yes
+                        </label>
+     
+                        <input class="radio_demo" type="radio" name="abdomen" id="chronic_no" value="0"> 
+                        <label for="exampleRadios">
+                            No
+                        </label>
+     
+                     </div>
+                </div>
+    
+                <div class="question">
+                    <p>Do you experience any burning sensation while urination?</p>
+    
+                    <div class="check-box">
+    
+                        <input class="radio_demo" type="radio" name="burning" id="fatigue_yes" value="1"> 
+                         <label for="exampleRadios">
+                            Yes
+                        </label>
+     
+                        <input class="radio_demo" type="radio" name="burning" id="fatigue_no" value="0"> 
+                        <label for="exampleRadios">
+                            No
+                        </label>
+     
+                     </div>
+                </div>
+                
+                <input type="submit" value="Predict" onclick="validation()">
+               
+            </div>
+        </form>
+    </div>
+</body>
+</html>

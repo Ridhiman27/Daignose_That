@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon_package_v0.16/site.webmanifest">
+  <link rel="icon" href="/static/favicon_package_v0.16/favicon-32x32.png" type="image/x-icon">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <img src="/static/DEF.png" class="logoo" alt="logo">
+        <div class="details">
+          <div class="greet">
+            <p class = greet1>Welcome To Diagnose That</p>
+            <p class = greet2>Please fill in the required details</p>
+          </div>
+
+          <form action="/intro" method="post">
+          
+          <input type="text" class="form-control fname" name="fname" placeholder="First name" required>
+          <input type="text" class="form-control lname" name="lname" placeholder="Last name">
+          <!-- dropdown -->
+          <div class="btn-group dropdown first">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Age group
+            </button>
+            <div class="dropdown-menu" name="age" aria-labelledby="dropdownMenuButton">
+              <a name="age" class="dropdown-item" href="#">below 50</a>
+              <a name="age" class="dropdown-item" href="#">above 50</a>
+            </div>
+          </div>
+        
+          <div class="btn-group dropdown second">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gender
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" name="gender">
+              <a class="dropdown-item" name="gender" href="#">Male</a>
+              <a class="dropdown-item" name="gender" href="#">Female</a>
+              <a class="dropdown-item" href="gender">Others</a>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-success sub1">Submit</button>
+          <a href="C:\Users\ridhi\OneDrive\Desktop\Diagnose_That\templates\nav1.html" class="btn btn-outline-warning sub2">Skip</a>
+          </form>
+        </div>
+      </td>
+
+      <td>
+        <img src="/static/ABC1.jpeg" class="tatakai" alt="doctors">
+      </td>
+    </tr>
+  </table>
+
+  <script criptsc="intro.js" async defer></script>
+  
+</body>
+
+</html>

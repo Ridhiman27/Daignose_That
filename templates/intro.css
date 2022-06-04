@@ -1,0 +1,71 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+
+#content {
+  position: relative;
+}
+
+.details {
+/* margin: auto;
+width: 60%;
+border: 5px solid #FFFF00;
+padding: 10px; */
+position: relative;
+bottom:13rem;
+left:4rem;
+/* top:1rem; */
+}
+
+.tatakai {
+  position: relative;
+  left:7rem;
+}
+
+.logoo {
+  position: relative;
+  bottom:13.5rem;
+  left: 2rem;
+}
+
+.greet1 {
+  font-size: 2rem;
+}
+
+.greet2 {
+  font-size: 1.5rem;
+}
+
+.lname {
+  position: relative;
+  top: 1.5rem;
+}
+
+.first {
+  position: relative;
+  top: 3rem;
+  left: 5rem;
+}
+
+.second {
+  position: relative;
+  top: 3rem;
+  left: 9rem;
+}
+
+.sub1 {
+  position: relative;
+  top: 7.5rem;
+  /* left: 2rem; */
+  right: 6rem;
+}
+
+.sub2 {
+  position: relative;
+  top: 7.5rem;
+  /* left: 2rem; */
+  right:2rem;
+}
