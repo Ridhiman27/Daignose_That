@@ -43,5 +43,15 @@ For example, the webpage of Alzheimer disease is shown below
 ### Output Predictions
 ![image](https://user-images.githubusercontent.com/93005927/226128212-cc8c904e-fa9e-4c89-9dbb-6bb5d7ae96b4.png)
 
+### Future scope:
+• A feature can be added that will help you find the nearest doctor by taking the user’s area 
+Pincode.
+• To make chatbots for interaction with user such that when user comes on our website he can 
+navigate and get his answers quickly.
 
+### Acknowledegments:
+We would like to thank Dr Uday Joshi and our HOD, Dr. Deepak Sharma, of our college, for 
+their cooperation in completing our project on the topic Diagnose That.
+We would like to take this opportunity to express our gratitude to all of of our group members 
+We would 
 
