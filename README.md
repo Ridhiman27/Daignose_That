@@ -83,6 +83,7 @@ are used as training data with 1 part of them as verification data. The total te
 1024 images.
 Now that our model was ready, the next step was to evaluate the deep learning model. One of 
 the methods to do that is data visualisation. We plotted an accuracy plot and a loss plot
+
 ![image](https://user-images.githubusercontent.com/93005927/226130451-63ede265-1558-495e-b6a0-51fca10c1e0c.png)
 
 
@@ -96,10 +97,10 @@ navigate and get his answers quickly.
 We would like to thank Dr Uday Joshi and our HOD, Dr. Deepak Sharma, of our college, for 
 their cooperation in completing our project on the topic Diagnose That.
 We would like to take this opportunity to express our gratitude to all of of our group members 
-• Ridhiman Dhariwal
-• Shruti Tyagi
-• Pyanshi Jain
-• Varshaah Karkala
+1. Ridhiman Dhariwal
+2. Shruti Tyagi
+3. Pyanshi Jain
+4. Varshaah Karkala
 
 
 
