@@ -44,7 +44,7 @@ For example, the webpage of Alzheimer disease is shown below
 ![image](https://user-images.githubusercontent.com/93005927/226128212-cc8c904e-fa9e-4c89-9dbb-6bb5d7ae96b4.png)
 
 ### Model Building  
-The model was built using the following steps:
+1. The model was built using the following steps:
 We used transfer learning using inception v3 for image classification. When we have a 
 relatively small dataset, a super-effective technique is to use Transfer Learning where we use 
 a pre-trained model. This model has been trained on an extremely large dataset, and we would 
@@ -62,6 +62,29 @@ layer with units corresponding to the number of outputs expected by your model.
 To train the convolution neural network, we used keras library from tensorflow. For 
 compiling it, we used binary crossentropy as the loss parameter.
 Then for fitting the model, we initialised 10 epochs
+
+2. The next step was to add new trainable layers that will turn old features into predictions on 
+the new dataset. This is important because the pre-trained model is loaded without the final 
+output layer.
+The pre-trained model’s final output will most likely be different from the output that we want 
+for your model.
+Therefore, we added some new dense layers as you please, but most importantly, a final dense 
+layer with units corresponding to the number of outputs expected by your model.
+To train the convolution neural network, we used keras library from tensorflow. For 
+compiling it, we used binary crossentropy as the loss parameter.
+Then for fitting the model, we initialised 10 epochs.
+
+### Implementation settings and Evaluation Indexes:
+The models and algorithms adopted in the work have been implemented, and all the 
+experiments are conducted by using Python on a CPU + GPU platform with the CPU of Intel 
+®Core™ i77700@3.60 GHz and the GPU of NVIDIA GeForce GTX 1080Ti.
+The dataset is divided into 3 equal parts in which 1 part is used as the testing data and 1 part
+are used as training data with 1 part of them as verification data. The total test set consists of 
+1024 images.
+Now that our model was ready, the next step was to evaluate the deep learning model. One of 
+the methods to do that is data visualisation. We plotted an accuracy plot and a loss plot
+![image](https://user-images.githubusercontent.com/93005927/226130451-63ede265-1558-495e-b6a0-51fca10c1e0c.png)
+
 
 ### Future scope:
 • A feature can be added that will help you find the nearest doctor by taking the user’s area 
