@@ -36,9 +36,12 @@ himself/herself tested.
 
 • After the user chooses which diseases they want to get tested for, they need to answer certain 
 medical questions or upload relevant medical imaging information. 
-For example, the webpage of Urinary disease is shown below
+For example, the webpage of Alzheimer disease is shown below
 
-![image](https://user-images.githubusercontent.com/93005927/226124551-0d99ca48-460a-427f-9f8a-fea8cf6a5a7b.png)
-![image](https://user-images.githubusercontent.com/93005927/226124608-9ffa9ec4-8a34-4778-91fd-d5b7c878055b.png)
+![image](https://user-images.githubusercontent.com/93005927/226128051-f9e77ed6-a881-4303-a6ab-d00827a27b30.png)
+
+### Output Predictions
+![image](https://user-images.githubusercontent.com/93005927/226128212-cc8c904e-fa9e-4c89-9dbb-6bb5d7ae96b4.png)
+
 
 
