@@ -43,6 +43,26 @@ For example, the webpage of Alzheimer disease is shown below
 ### Output Predictions
 ![image](https://user-images.githubusercontent.com/93005927/226128212-cc8c904e-fa9e-4c89-9dbb-6bb5d7ae96b4.png)
 
+### Model Building  
+The model was built using the following steps:
+We used transfer learning using inception v3 for image classification. When we have a 
+relatively small dataset, a super-effective technique is to use Transfer Learning where we use 
+a pre-trained model. This model has been trained on an extremely large dataset, and we would 
+be able to transfer weights which were learned through hundreds of hours of training on 
+multiple high-powered GPUs. Many such models are open-sourced such as VGG-19 and 
+Inception-v3. They were trained on millions of images with extremely high computing power 
+which can be very expensive to achieve from scratch.
+The next step was to add new trainable layers that will turn old features into predictions on 
+the new dataset. This is important because the pre-trained model is loaded without the final 
+output layer.
+The pre-trained model’s final output will most likely be different from the output that we want 
+for your model.
+Therefore, we added some new dense layers as you please, but most importantly, a final dense 
+layer with units corresponding to the number of outputs expected by your model.
+To train the convolution neural network, we used keras library from tensorflow. For 
+compiling it, we used binary crossentropy as the loss parameter.
+Then for fitting the model, we initialised 10 epochs
+
 ### Future scope:
 • A feature can be added that will help you find the nearest doctor by taking the user’s area 
 Pincode.
@@ -53,5 +73,10 @@ navigate and get his answers quickly.
 We would like to thank Dr Uday Joshi and our HOD, Dr. Deepak Sharma, of our college, for 
 their cooperation in completing our project on the topic Diagnose That.
 We would like to take this opportunity to express our gratitude to all of of our group members 
-We would 
+• Ridhiman Dhariwal
+• Shruti Tyagi
+• Pyanshi Jain
+• Varshaah Karkala
+
+
 
