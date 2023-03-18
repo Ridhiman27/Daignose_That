@@ -10,6 +10,7 @@ The 6 diseases which we have included in our website are:
 4. Urinary Inflammation 
 5. Alzheimer’s 
 6. Tuberculosis (TB)
+
 ###Architecture Design
 • Initially on the introduction page the user has to give a short questionnaire where some basic 
 questions age and gender are asked and it’s users option to give the details.
@@ -19,3 +20,10 @@ disease, urinary disease will be a questionnaire for the user.
 • And after the prediction is made a recommendation will be made and solution and remedies 
 will be displayed for the user.
 ![image](https://user-images.githubusercontent.com/93005927/226123830-a8dcc6fb-4e84-4992-8ac5-036be44d27ff.png)
+
+###Hardware and software requirements
+Procurement of hardware for using the system is OUT OF SCOPE of this project and only software has been used and implemented.
+
+###Working flow of the website
+1. The user interacts with our landing page containing an optional questionnaire. If the user skips this questionnaire they are asked to choose 1 of 6 diseases for which they want to get tested.
+![image](https://user-images.githubusercontent.com/93005927/226124337-6fd41b34-881f-457d-b13f-c3ff31078253.png)
